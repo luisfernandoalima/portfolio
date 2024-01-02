@@ -1,0 +1,22 @@
+header{
+    background-color: var(--white);
+    height: 10vh;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header img {
+height: 10vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
