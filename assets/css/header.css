@@ -1,22 +1,45 @@
-header{
-    background-color: var(--white);
+#barraMenu {
+    background-color: var(--bgColor3);
+    height: 0.5em;
+}
+
+header {
+    background-color: var(--bgHeader);
     height: 10vh;
 }
 
-.cabecalho{
+.cabecalho {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
 }
 
-header img {
-height: 10vh;
+.menu_fixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bgHeader);
 }
 
-nav{
+main {
+    height: 1000vh;
+}
+
+.imgLogo {
+    height: 10vh;
+}
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
+}
+
+.checkboxArea,
+.imgArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

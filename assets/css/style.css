@@ -1,19 +1,23 @@
 :root{
     --white:#F0F3FA;
     --black:#121212;
+    --bgHeader:#F0F3FA;
+    --bgColor1: #D5DEEF;
+    --bgColor2:#B1C9EF;
+    --bgColor3:#628ECB;
+    --title: #006DA4;
 }
+
+.darkMode:root {
+    --bgHeader:#121212;
+    --bgColor1: #032030;
+    --bgColor2:#022B42;
+    --bgColor3: #006DA4;
+    --title:#638ECB;
+}
+
 
 *{
     padding: 0;
     margin: 0;
-}
-
-header{
-    display: flex;
-    justify-content: center;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
 }
