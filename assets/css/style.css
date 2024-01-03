@@ -6,6 +6,8 @@
     --bgColor2:#B1C9EF;
     --bgColor3:#628ECB;
     --title: #006DA4;
+    --text: #395886;
+    --bgHoverLink:#B1C9EF;
 }
 
 .darkMode:root {
@@ -14,6 +16,8 @@
     --bgColor2:#022B42;
     --bgColor3: #006DA4;
     --title:#638ECB;
+    --text: #006DA4;
+    --bgHoverLink:#003554;
 }
 
 

@@ -28,13 +28,27 @@ main {
 }
 
 .imgLogo {
-    height: 10vh;
+    width: 54%;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+nav a{
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text);
+    font-size: 18px;
+    transition: .3s;
+}
+
+nav a:hover{
+    background-color: var(--bgHoverLink);
+    border-radius: 50px;
 }
 
 .checkboxArea,
