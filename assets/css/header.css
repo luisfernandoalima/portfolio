@@ -6,6 +6,7 @@
 header {
     background-color: var(--bgHeader);
     height: 10vh;
+    z-index: 3;
 }
 
 .cabecalho {
@@ -13,6 +14,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    z-index: 2;
 }
 
 .menu_fixo {
@@ -25,6 +27,9 @@ header {
 
 main {
     height: 1000vh;
+    z-index: 0;
+    position: relative;
+    transition: .3s;
 }
 
 .imgLogo {
@@ -37,7 +42,7 @@ nav {
     justify-content: space-between;
 }
 
-nav a{
+nav a {
     padding: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -46,7 +51,8 @@ nav a{
     transition: .3s;
 }
 
-nav a:hover{
+nav a:hover,
+.links a:hover {
     background-color: var(--bgHoverLink);
     border-radius: 50px;
 }
@@ -56,4 +62,101 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.label-menu {
+    display: none;
+}
+
+
+/* Menu lateral */
+
+.menu-lateral {
+    position: fixed;
+    height: 89vh;
+    width: 200px;
+    right: 0;
+    background-color: var(--bgColor3);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    box-shadow: black -5px 10px 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+.links a {
+    color: var(--links);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+.links a:hover {
+    box-shadow: var(--black) 5px 4px 8px;
+}
+
+.tema {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width:818px) {
+
+    .cabecalho nav {
+        display: none !important;
+    }
+
+    .label-menu {
+        display: block
+    }
+
+    .imgLogo {
+        width: 78%;
+    }
+}
+
+@media (max-width:766px) {
+    .imgLogo {
+        width: 61%;
+    }
+}
+
+@media (max-width:574px) {
+    .imgLogo {
+        width: 34%;
+    }
+}
+
+@media (max-width:425px) {
+    .imgLogo {
+        width: 48%;
+    }
+}
+
+@media (max-width:375px) {
+    .imgLogo {
+        width: 55%;
+    }
+}
+
+@media (max-width:320px) {
+    .imgLogo {
+        width: 65%;
+    }
 }

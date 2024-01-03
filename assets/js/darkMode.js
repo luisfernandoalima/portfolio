@@ -1,8 +1,6 @@
 const checkBox = document.querySelector('.checkBox')
 const html = document.querySelector('html')
 
-
-
 checkBox.addEventListener('change', () => {
     html.classList.toggle('darkMode')
     var img = document.querySelector('.imgLogo');
