@@ -1,0 +1,59 @@
+#barraMenu {
+    background-color: var(--bgColor3);
+    height: 0.5em;
+}
+
+header {
+    background-color: var(--bgHeader);
+    height: 10vh;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.menu_fixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bgHeader);
+}
+
+main {
+    height: 1000vh;
+}
+
+.imgLogo {
+    width: 54%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text);
+    font-size: 18px;
+    transition: .3s;
+}
+
+nav a:hover{
+    background-color: var(--bgHoverLink);
+    border-radius: 50px;
+}
+
+.checkboxArea,
+.imgArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
