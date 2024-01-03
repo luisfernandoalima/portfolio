@@ -8,6 +8,7 @@
     --title: #006DA4;
     --text: #395886;
     --bgHoverLink:#B1C9EF;
+    --links: #121212;
 }
 
 .darkMode:root {
@@ -18,10 +19,15 @@
     --title:#638ECB;
     --text: #006DA4;
     --bgHoverLink:#003554;
+    --links: #F0F3FA;
 }
 
 
 *{
     padding: 0;
     margin: 0;
+}
+
+.disable{
+    display: none !important;
 }
