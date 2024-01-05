@@ -26,10 +26,8 @@ header {
 }
 
 main {
-    height: 1000vh;
     z-index: 0;
     position: relative;
-    transition: .3s;
 }
 
 .imgLogo {
