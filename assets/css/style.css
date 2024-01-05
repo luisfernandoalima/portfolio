@@ -1,49 +1,51 @@
-:root{
-    --white:#F0F3FA;
-    --black:#121212;
-    --bgHeader:#F0F3FA;
+:root {
+    --white: #F0F3FA;
+    --black: #121212;
+    --bgHeader: #F0F3FA;
     --bgColor1: #D5DEEF;
-    --bgColor2:#B1C9EF;
-    --bgColor3:#628ECB;
+    --bgColor2: #B1C9EF;
+    --bgColor3: #628ECB;
     --title: #006DA4;
     --text: #395886;
     --text2: #000;
-    --bgHoverLink:#B1C9EF;
+    --bgHoverLink: #B1C9EF;
     --links: #121212;
 }
 
 .darkMode:root {
-    --bgHeader:#121212;
+    --bgHeader: #121212;
     --bgColor1: #032030;
-    --bgColor2:#022B42;
+    --bgColor2: #022B42;
     --bgColor3: #006DA4;
-    --title:#638ECB;
+    --title: #638ECB;
     --text: #006DA4;
     --text2: #F0F3FA;
-    --bgHoverLink:#003554;
+    --bgHoverLink: #003554;
     --links: #F0F3FA;
 }
 
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.disable{
+.disable {
     display: none !important;
 }
 
-#inicio{
+/* Início */
+#inicio {
     height: 90vh;
     background: var(--bgColor1);
 }
 
-.row{
+.row {
     width: 100%;
+    margin: auto;
 }
 
-picture{
+picture {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,11 +53,11 @@ picture{
     height: 90vh;
 }
 
-picture img{
-    width: 70%;
+picture img {
+    width: 35vw;
 }
 
-.text-area{
+.text-area {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,10 +66,10 @@ picture img{
 
 .text-inicio h1 {
     color: var(--text);
-    font-size: 4em;
+    font-size: 5.5vw;    
 }
 
-.text-inicio p{
+.text-inicio p {
     line-height: 0px;
     margin-bottom: 5px;
 }
@@ -82,7 +84,7 @@ picture img{
     font-size: 1.3em;
 }
 
-
+/* Barra piscando */
 .blink {
     display: inline-block;
     position: absolute;
@@ -90,18 +92,76 @@ picture img{
     height: 1em;
     margin-top: 5px;
     margin-left: 5px;
-    background-color:var(--text);
+    background-color: var(--text);
     animation: blink 1s infinite !important;
-  }
+}
 
-  @keyframes blink {
+@keyframes blink {
     0% {
-      opacity: 1;
+        opacity: 1;
     }
+
     50% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
+
+/* Botão LinkedIn */
+
+.text-inicio button {
+    margin-top: 15px;
+    background-color: var(--white);
+    border: 3px solid var(--text);
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.text-inicio button a {
+    padding: 10px;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.text-inicio button:hover {
+    background-color: var(--text);
+}
+
+.text-inicio button a:hover {
+    color: var(--white);
+}
+
+@media (max-width:767px) {
+    #inicio{
+        height: auto;
+    }
+    picture {
+        height: 50vw;
+    }
+
+    picture img {
+        width: 45vw;
+    }
+
+    .text-area {
+        height: 60vw;
+    }
+
+    .text-inicio h1 {
+        font-size: 10vw;
+    }
+
+
+    .text-inicio p:nth-child(1) {
+        font-size: 4vw;
+    }
+
+    .text-inicio p:nth-child(3) {
+        font-size: 5vw;
+    }
+}

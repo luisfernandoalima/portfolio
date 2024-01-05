@@ -1,6 +1,6 @@
 const menu = document.querySelector('#checkbox-menu')
 const menuLateral = document.querySelector('.menu-lateral')
-const main = document.querySelector('main')
+const main = document.querySelector('.blur')
 const nav = document.querySelector('nav')
 const links = document.querySelector('.links')
 
@@ -13,7 +13,7 @@ menu.addEventListener('change', () => {
     links.innerHTML = nav.innerHTML
     if (menuLateral.classList.contains('disable')) {
         menuLateral.classList.remove('disable')
-        main.style.filter = 'blur(3px)'
+        main.style.filter = 'blur(2px)'
         menuLateral.classList.add('scale-up-hor-right')
     } else {
         main.style.filter = 'blur(0)'
