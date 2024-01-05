@@ -1,6 +1,6 @@
 const menu = document.querySelector('#checkbox-menu')
 const menuLateral = document.querySelector('.menu-lateral')
-const main = document.querySelector('.blur')
+const main = document.querySelectorAll('.blur')
 const nav = document.querySelector('nav')
 const links = document.querySelector('.links')
 
@@ -13,10 +13,14 @@ menu.addEventListener('change', () => {
     links.innerHTML = nav.innerHTML
     if (menuLateral.classList.contains('disable')) {
         menuLateral.classList.remove('disable')
-        main.style.filter = 'blur(2px)'
+        main.forEach(main => {
+            main.style.filter = 'blur(2px)'
+        });
         menuLateral.classList.add('scale-up-hor-right')
     } else {
-        main.style.filter = 'blur(0)'
+        main.forEach(main => {
+            main.style.filter = 'blur(0)'
+        });
         menuLateral.classList.add('scale-out-hor-right')
         setTimeout(disable, 500)
     }
@@ -34,11 +38,13 @@ const verificarLargura = () => {
         labellateral.parentNode.removeChild(labellateral);
         // Adiciona o elemento à outra div
         tema.appendChild(labellateral);
-    } else{
+    } else {
         checkboxArea.appendChild(labellateral);
         menu.checked = false;
         menuLateral.classList.add('disable')
-        main.style.filter = 'blur(0)'
+        main.forEach(main => {
+            main.style.filter = 'blur(0)'
+        });
     }
 }
 

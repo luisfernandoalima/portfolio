@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/objects.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -27,9 +28,9 @@
                 </div>
                 <!-- Navegação -->
                 <nav class="col-6 col-sm-0">
-                    <a href="">Início</a>
-                    <a href="">Sobre mim</a>
-                    <a href="">Conhecimentos</a>
+                    <a href="#inicio">Início</a>
+                    <a href="#sobre-mim">Sobre mim</a>
+                    <a href="#conhecimentos">Conhecimentos</a>
                     <a href="">Projetos</a>
                 </nav>
                 <!-- Switch da cor de tela -->
@@ -86,8 +87,9 @@
                                     <div class="atropos-inner">
                                         <!-- put your custom content here -->
                                         <picture>
-                                            
-                            <source media="(max-width:762px)" srcset="assets/img/images/freelancer-md.png">
+
+                                            <source media="(max-width:762px)"
+                                                srcset="assets/img/images/freelancer-md.png">
                                             <img src="assets/img/images/freelancer-bg.png" alt="">
                                         </picture>
                                     </div>
@@ -124,14 +126,52 @@
                 </div>
             </div>
         </section>
+        <section id="conhecimentos">
+            <div class="container-fluid">
+                <div class="row blur">
+                    <div class="col-sm-12 col-md-6">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide" style="background-color: #F0957F;">
+                                    <img src="assets/img/Icon/HTML5.png" alt="">
+                                </div>
+                                <div class="swiper-slide" style="background-color: #3333ff;">
+                                    <img src="assets/img/Icon/CSS3.png" alt="">
+                                </div>
+                                <div class="swiper-slide" style="background-color: #ffa500;">
+                                    <img src="assets/img/Icon/js.png" alt="">
+                                </div>
+                                <div class="swiper-slide" style="background-color: #ee82ee;">
+                                    <img src="assets/img/Icon/bootstrap.png" alt="">
+                                </div>
+                                <div class="swiper-slide" style="background-color: rgb(255, 168, 168);">
+                                    <img src="assets/img/Icon/git.png" alt="">
+                                </div>
+                                <div class="swiper-slide" style="background-color: #fff;">
+                                    <img src="assets/img/Icon/github.png" alt="">
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>Criado por @Luis</p>
     </footer>
-    <!-- JavaScript -->
-    <script src="assets/js/header.js"></script>
-    <script src="assets/js/darkMode.js"></script>
-    <script src="assets/js/menu.js"></script>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
@@ -156,6 +196,34 @@
             }
         });
     </script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+      
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+             navigation: {
+                 nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            effect: 'cards',
+        });
+      </script>
+    <!-- JavaScript -->
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/darkMode.js"></script>
+    <script src="assets/js/menu.js"></script>
 </body>
 
 </html>

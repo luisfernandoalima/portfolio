@@ -36,8 +36,10 @@
 
 /* Início */
 #inicio {
-    height: 90vh;
+    height: 100vh;
     background: var(--bgColor1);
+    display: flex;
+    align-items: center;
 }
 
 .row {
@@ -139,8 +141,10 @@ picture img {
 /* Sobre mim */
 
 #sobre-mim {
-    height: 90vh;
+    height: 100vh;
     background-color: var(--bgColor2);
+    display: flex;
+    align-items: center;
 }
 
 
@@ -160,9 +164,29 @@ picture img {
     font-size: 2vw;
 }
 
+/* Conhecimentos */
+
+#conhecimentos {
+    height: 100vh;
+    background-color: var(--bgColor1);
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide {
+    width: 100%;
+    border-radius: 50px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    width: 200px;
+}
+
 @media (max-width:767px) {
     #inicio {
-        height: 90vh;
         display: flex;
         align-items: center;
     }
@@ -203,6 +227,7 @@ picture img {
 
     #sobre-mim picture {
         height: 35vh;
+        margin-top: 7vh;
     }
 
     #sobre-mim .text-area {
@@ -210,9 +235,9 @@ picture img {
         margin-top: 20px;
     }
 
-    .text-sobre{
+    .text-sobre {
         height: auto;
-       
+        margin-top: 30px;
     }
 
     .text-sobre h2 {
