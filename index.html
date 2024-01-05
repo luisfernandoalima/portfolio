@@ -71,7 +71,8 @@
                                 <p>OLÁ, EU SOU</p>
                                 <h1>Luis Fernando<span class="blink"></span></h1>
                                 <p><strong>DESENVOLVEDOR FRONT-END</strong></p>
-                                <button><a href="https://www.linkedin.com/in/luis-fernando-a-43aaa2230/" target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></button>
+                                <button><a href="https://www.linkedin.com/in/luis-fernando-a-43aaa2230/"
+                                        target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></button>
                             </div>
                         </div>
                     </div>
@@ -85,9 +86,37 @@
                                     <div class="atropos-inner">
                                         <!-- put your custom content here -->
                                         <picture>
+                                            
+                            <source media="(max-width:762px)" srcset="assets/img/images/freelancer-md.png">
                                             <img src="assets/img/images/freelancer-bg.png" alt="">
                                         </picture>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sobre-mim">
+            <div class="container-fluid">
+                <div class="row blur">
+                    <div class="col-sm-12 col-md-6">
+                        <picture>
+                            <source media="(max-width:767px)" srcset="assets/img/images/eu-sm.jpeg">
+                            <img src="assets/img/images/eu-bg.jpeg" alt="">
+                        </picture>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="text-area">
+                            <div class="text-sobre">
+                                <h2>Sobre mim:</h2>
+                                <div class="texto">
+                                    <p>Meu nome é Luis Fernando e sou desenvolvedor web front-end. Meu primeiro contato
+                                        com programação foi em 2021, quando entrei na Etec Jardim Ângela para o curso de
+                                        Desenvolvimento de Sistemas (DS) junto ao ensino médio.</p>
+                                    <p>Desde então, estudo diversas tecnologias para ampliar meus conhecimentos e criar
+                                        projetos mais complexos.</p>
                                 </div>
                             </div>
                         </div>
@@ -113,19 +142,19 @@
     <script src="node_modules/atropos/atropos.min.js"></script>
     <script>
         const myAtropos = Atropos({
-  el: '.my-atropos',
-  activeOffset: 40,
-  shadowScale: 1.05,
-  onEnter() {
-    console.log('Enter');
-  },
-  onLeave() {
-    console.log('Leave');
-  },
-  onRotate(x, y) {
-    console.log('Rotate', x, y);
-  }
-});
+            el: '.my-atropos',
+            activeOffset: 40,
+            shadowScale: 1.05,
+            onEnter() {
+                console.log('Enter');
+            },
+            onLeave() {
+                console.log('Leave');
+            },
+            onRotate(x, y) {
+                console.log('Rotate', x, y);
+            }
+        });
     </script>
 </body>
 
