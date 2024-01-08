@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/objects.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css" />
 </head>
 
 <body>
@@ -71,7 +71,7 @@
                             <div class="text-inicio">
                                 <p>OLÁ, EU SOU</p>
                                 <h1>Luis Fernando<span class="blink"></span></h1>
-                                <p><strong>DESENVOLVEDOR FRONT-END</strong></p>
+                                <h1><strong>DESENVOLVEDOR FRONT-END</strong></h1>
                                 <button><a href="https://www.linkedin.com/in/luis-fernando-a-43aaa2230/"
                                         target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></button>
                             </div>
@@ -111,7 +111,7 @@
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <div class="text-area">
-                            <div class="text-sobre">
+                            <article class="text-sobre">
                                 <h2>Sobre mim:</h2>
                                 <div class="texto">
                                     <p>Meu nome é Luis Fernando e sou desenvolvedor web front-end. Meu primeiro contato
@@ -120,7 +120,7 @@
                                     <p>Desde então, estudo diversas tecnologias para ampliar meus conhecimentos e criar
                                         projetos mais complexos.</p>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@
         <section id="conhecimentos">
             <div class="container-fluid">
                 <div class="row blur">
-                    <div class="col-sm-12 col-md-6">
+                    <div class="col-sm-12 col-md-6 caroussel">
                         <!-- Slider main container -->
                         <div class="swiper">
                             <!-- Additional required wrapper -->
@@ -163,7 +163,72 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6">
-
+                        <div class="text-area">
+                            <article class="text-sobre info-text">
+                                <h2>/* HTML */</h2>
+                                <div class="texto">
+                                    <p>é a linguagem padrão de marcação para criar páginas web. Ele fornece a estrutura
+                                        para o conteúdo na web, utilizando elementos como títulos, parágrafos, imagens,
+                                        links e mais. Documentos HTML são compostos por elementos aninhados, formando
+                                        uma estrutura em árvore que os navegadores usam para renderizar o conteúdo.</p>
+                                </div>
+                            </article>
+                            <article class="text-sobre info-text disable">
+                                <h2>/* CSS */</h2>
+                                <div class="texto">
+                                    <p>é uma linguagem de estilo utilizada para descrever a apresentação de um documento
+                                        escrito em HTML. Ela permite a separação entre conteúdo e apresentação,
+                                        possibilitando que desenvolvedores estilizem páginas web com diversos layouts,
+                                        cores e fontes. As regras CSS são aplicadas a elementos HTML, definindo como
+                                        eles devem aparecer na tela do usuário ou em outros meios.</p>
+                                </div>
+                            </article>
+                            <article class="text-sobre info-text disable">
+                                <h2>/* JavaScript */</h2>
+                                <div class="texto">
+                                    <p>é uma linguagem de programação versátil que adiciona interatividade e
+                                        comportamento dinâmico às páginas web. Ela permite que os desenvolvedores
+                                        manipulem o Document Object Model (DOM), respondam a ações do usuário e criem
+                                        funcionalidades assíncronas. JavaScript é essencial para scripting no lado do
+                                        cliente, aprimorando a experiência do usuário ao tornar as páginas web mais
+                                        responsivas.</p>
+                                </div>
+                            </article>
+                            <article class="text-sobre info-text disable">
+                                <h2>/* Bootstrap */</h2>
+                                <div class="texto">
+                                    <p>é um popular framework front-end que simplifica o processo de design e
+                                        estilização de páginas web. Desenvolvido pelo Twitter, o Bootstrap fornece um
+                                        conjunto de componentes pré-projetados, como barras de navegação, grades, botões
+                                        e formulários, facilitando a criação de uma interface de usuário consistente e
+                                        responsiva. O sistema de grades e utilitários responsivos do Bootstrap ajuda a
+                                        garantir que os sites tenham uma boa aparência em vários dispositivos e tamanhos
+                                        de tela.</p>
+                                </div>
+                            </article>
+                            <article class="text-sobre info-text disable">
+                                <h2>/* Git */</h2>
+                                <div class="texto">
+                                    <p> um sistema de controle de versão distribuído usado para rastrear alterações no
+                                        código-fonte durante o desenvolvimento de software. Ele permite que vários
+                                        desenvolvedores trabalhem em um projeto simultaneamente, mantendo um histórico
+                                        de alterações e facilitando a colaboração. O Git fornece recursos como branches,
+                                        merges e rastreamento de versões, ajudando os desenvolvedores a gerenciar e
+                                        coordenar seu trabalho de forma eficiente.</p>
+                                </div>
+                            </article>
+                            <article class="text-sobre info-text disable">
+                                <h2>/* GitHub */</h2>
+                                <div class="texto">
+                                    <p>é uma plataforma baseada na web que utiliza o Git para controle de versão e
+                                        aprimora a colaboração entre desenvolvedores. Desenvolvedores usam o GitHub para
+                                        hospedar e compartilhar seus repositórios Git, tornando-a uma plataforma popular
+                                        para projetos de código aberto. O GitHub oferece recursos como pull requests,
+                                        rastreamento de problemas e wikis, facilitando a comunicação e a gestão de
+                                        projetos dentro de equipes de desenvolvimento.</p>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -197,7 +262,7 @@
         });
     </script>
     <!-- Swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
       
@@ -224,6 +289,7 @@
     <script src="assets/js/header.js"></script>
     <script src="assets/js/darkMode.js"></script>
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/caroussel.js"></script>
 </body>
 
 </html>

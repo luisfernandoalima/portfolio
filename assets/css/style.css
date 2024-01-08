@@ -81,7 +81,7 @@ picture img {
     font-size: 1.5em;
 }
 
-.text-inicio p:nth-child(3) {
+.text-inicio h1:nth-child(3) {
     color: var(--text2);
     font-size: 1.3em;
 }
@@ -173,6 +173,11 @@ picture img {
     align-items: center;
 }
 
+.caroussel{
+    display: flex;
+    align-items: center;
+}
+
 .swiper-slide {
     width: 100%;
     border-radius: 50px;
@@ -213,7 +218,7 @@ picture img {
         font-size: 4vw;
     }
 
-    .text-inicio p:nth-child(3) {
+    .text-inicio h1:nth-child(3) {
         font-size: 5vw;
     }
 
