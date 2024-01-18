@@ -161,7 +161,7 @@ picture img {
 
 .texto {
     color: var(--text2);
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 /* Conhecimentos */
@@ -171,6 +171,13 @@ picture img {
     background-color: var(--bgColor1);
     display: flex;
     align-items: center;
+}
+
+#conhecimentos h2 {
+    padding-bottom: 10vh;
+    text-align: center;
+    font-size: 4vw;
+    color: var(--text);
 }
 
 .caroussel{
@@ -188,6 +195,15 @@ picture img {
 
 .swiper-slide img {
     width: 200px;
+}
+
+.info-text{
+    width: 90%;
+    align-self: flex-start;
+}
+
+h3{
+    color: var(--text);
 }
 
 @media (max-width:767px) {
