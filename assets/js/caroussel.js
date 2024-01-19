@@ -6,10 +6,12 @@ const changeText = () => {
     $infoText.forEach(text => {
         text.classList.add('disable')
     });
+
     $slideItem.forEach((slide, index) => {
         if (slide.classList.contains('swiper-slide-active')) {
             $infoText[index].classList.remove('disable');
         }
+        console.log(slide + $infoText[index])
     });
 }
 
