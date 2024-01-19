@@ -1,4 +1,4 @@
-const $slideItem = document.querySelectorAll('.swiper-slide')
+const $slideItem = document.querySelectorAll('.carousel-item')
 
 const $infoText = document.querySelectorAll('.info-text')
 
@@ -8,7 +8,7 @@ const changeText = () => {
     });
 
     $slideItem.forEach((slide, index) => {
-        if (slide.classList.contains('swiper-slide-active')) {
+        if (slide.classList.contains('active')) {
             $infoText[index].classList.remove('disable');
         }
         console.log(slide + $infoText[index])

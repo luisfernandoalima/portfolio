@@ -175,27 +175,20 @@ picture img {
 }
 
 #conhecimentos h2 {
-    padding-bottom: 10vh;
+    padding-bottom: 7vh;
     text-align: center;
     font-size: 4vw;
     color: var(--text);
 }
 
+.texto p{
+    text-align: justify;
+}
+
 .caroussel{
     display: flex;
-    align-items: center;
-}
-
-.swiper-slide {
-    width: 100%;
-    border-radius: 50px;
-    display: flex !important;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-}
-
-.swiper-slide img {
-    width: 200px;
 }
 
 .info-text{
@@ -265,7 +258,6 @@ h3{
 
     .text-sobre {
         height: auto;
-        margin-top: 30px;
     }
 
     .text-sobre h2 {
@@ -278,7 +270,7 @@ h3{
 
     /* Conhecimentos */
     .text-area-conhecimentos{
-        height: 40vh;
+        height: 45vh;
     }
 
     #conhecimentos h2 {
@@ -286,12 +278,14 @@ h3{
         padding-bottom: 5vh;
     }
 
-    .swiper-slide img {
-        width: 50%;
+    .carousel{
+        width: 80%;
     }
-    .swiper {
-        align-self: flex-start;
-        width: 55vw;
-        height: 60vw;
+
+    .carousel-inner{
+        display: flex;
+        height: 25vh;
+        width: 25vw;
+        margin: auto;
       }
 }
