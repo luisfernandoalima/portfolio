@@ -57,6 +57,7 @@ picture {
 
 picture img {
     width: 35vw;
+    filter: drop-shadow(5px 5px 10px black);
 }
 
 .text-area {
@@ -206,6 +207,12 @@ h3{
     color: var(--text);
 }
 
+.text-area-conhecimentos{
+    display: flex;
+    justify-content: center;
+    height: 67vh;
+}
+
 @media (max-width:767px) {
     #inicio {
         display: flex;
@@ -252,7 +259,7 @@ h3{
     }
 
     #sobre-mim .text-area {
-        height: 55vh;
+        height: 45vh;
         margin-top: 20px;
     }
 
@@ -268,4 +275,23 @@ h3{
     .texto {
         font-size: 1em;
     }
+
+    /* Conhecimentos */
+    .text-area-conhecimentos{
+        height: 40vh;
+    }
+
+    #conhecimentos h2 {
+        font-size: 2em;
+        padding-bottom: 5vh;
+    }
+
+    .swiper-slide img {
+        width: 50%;
+    }
+    .swiper {
+        align-self: flex-start;
+        width: 55vw;
+        height: 60vw;
+      }
 }

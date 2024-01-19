@@ -19,7 +19,7 @@ const init = () => {
         } else {
             // retira a classe adicional do elemento
             cabeçalho.classList.remove('menu_fixo');
-            menuLateral.style.top = '11.5vh'
+            menuLateral.style.top = '11vh'
             menuLateral.style.height = '89vh'
             // retira a altura do cabeçalho-espaço
             cabeçalhoFixo.style.height = 0;
