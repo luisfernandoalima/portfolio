@@ -111,7 +111,7 @@ nav a:hover,
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 0;
+    bottom: 10vh;
 }
 
 @media (max-width:818px) {

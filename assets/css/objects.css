@@ -1,133 +1,167 @@
 /* Switch de temas */
 .checkBox {
-    opacity: 0;
-    position: absolute;
+  opacity: 0;
+  position: absolute;
 }
 
 .label {
-    background-color: #003554;
-    border-radius: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    position: relative;
-    height: 26px;
-    width: 50px;
-    transform: scale(1.5s);
+  background-color: #003554;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5s);
 }
 
 .label .ball {
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    height: 22px;
-    width: 22px;
-    transform: translateX(0px);
-    transition: transform .2s linear
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform .2s linear
 }
 
 .checkBox:checked+.label .ball {
-    transform: translateX(24px);
+  transform: translateX(24px);
 }
 
 .fa-moon {
-    color: #fff;
+  color: #fff;
 }
 
 .fa-sun {
-    color: #ffff00;
+  color: #ffff00;
 }
 
 /* Menu hamburguer */
 #checkbox-menu {
-    position: absolute;
-    opacity: 0;
+  position: absolute;
+  opacity: 0;
 }
 
 label {
-    cursor: pointer;
-    position: relative;
-    display: block;
-    height: 22px;
-    width: 30px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 30px;
 }
 
 label span {
-    position: absolute;
-    display: block;
-    height: 5px;
-    width: 100%;
-    border-radius: 30px;
-    background-color: var(--bgColor3);
-    transition: .25s ease-in-out;
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+  background-color: var(--bgColor3);
+  transition: .25s ease-in-out;
 }
 
 label span:nth-child(1) {
-    top: 0;
+  top: 0;
 }
 
 label span:nth-child(2) {
-    top: 8px;
+  top: 8px;
 }
 
 label span:nth-child(3) {
-    top: 16px;
+  top: 16px;
 }
 
 #checkbox-menu:checked+label span:nth-child(1) {
-    transform: rotate(-45deg);
-    top: 8px;
+  transform: rotate(-45deg);
+  top: 8px;
 }
 
 #checkbox-menu:checked+label span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 #checkbox-menu:checked+label span:nth-child(3) {
-    transform: rotate(45deg);
-    top: 8px;
+  transform: rotate(45deg);
+  top: 8px;
 }
 
 /* Menu lateral */
 
 .scale-up-hor-right {
-    -webkit-animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .scale-out-hor-right {
-	-webkit-animation: scale-out-hor-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: scale-out-hor-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: scale-out-hor-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: scale-out-hor-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 /* Carrossel */
 
-.carousel{
+.carousel {
   width: 55%;
 }
 
-.carousel-inner{
+.carousel-inner {
   display: flex;
   height: 40vh;
   width: 15vw;
   margin: auto;
 }
 
-.carousel-item{
+.carousel-item {
   align-self: center;
 }
 
-.carousel-item img{
+.carousel-item img {
   margin: auto;
   width: 75% !important;
 }
 
+/* Cards */
 
+.card {
+  margin: auto;
+  width: 100%;
+}
 
+.card-img-top {
+  padding: 5px;
+  margin: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-text {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  /* Esconde o conteúdo que ultrapassa o contêiner */
+  text-overflow: ellipsis;
+  /* Substitui o texto que ultrapassa por reticências */
+  -webkit-line-clamp: 3;
+  /* Número de linhas desejado */
+}
+
+.card-body button{
+display: block;
+margin: auto;
+width: 100%;
+border: none;
+border-radius: 10px;
+color: var(--white);
+background-color: var(--text);
+
+}
 
 /* Animações */
 /* ----------------------------------------------
@@ -142,68 +176,75 @@ label span:nth-child(3) {
  * animation scale-up-hor-right
  * ----------------------------------------
  */
- @-webkit-keyframes scale-up-hor-right {
-    0% {
-      -webkit-transform: scaleX(0.4);
-              transform: scaleX(0.4);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-    }
-    100% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-    }
+@-webkit-keyframes scale-up-hor-right {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
   }
-  @keyframes scale-up-hor-right {
-    0% {
-      -webkit-transform: scaleX(0.4);
-              transform: scaleX(0.4);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-    }
-    100% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-    }
+
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
   }
-  /**
+}
+
+@keyframes scale-up-hor-right {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+}
+
+/**
  * ----------------------------------------
  * animation scale-out-hor-right
  * ----------------------------------------
  */
 @-webkit-keyframes scale-out-hor-right {
-    0% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scaleX(0);
-              transform: scaleX(0);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
   }
-  @keyframes scale-out-hor-right {
-    0% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scaleX(0);
-              transform: scaleX(0);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
+
+  100% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
   }
+}
+
+@keyframes scale-out-hor-right {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
