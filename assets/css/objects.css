@@ -137,6 +137,8 @@ label span:nth-child(3) {
   padding: 5px;
   margin: auto;
   width: 100%;
+  height: 20vh;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -152,15 +154,42 @@ label span:nth-child(3) {
   /* Número de linhas desejado */
 }
 
-.card-body button{
-display: block;
-margin: auto;
-width: 100%;
-border: none;
-border-radius: 10px;
-color: var(--white);
-background-color: var(--text);
+.card-body button {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  color: var(--white);
+  background-color: var(--text);
 
+}
+
+/* PupUp */
+body{
+  display: flex;
+  flex-direction: column;
+}
+.popup-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  height: 75vh;
+  width: 75vw;
+  margin: auto;
+  border: 4px solid var(--text);
+ border-radius: 20px;
+  background-color: var(--bgColor1);
+  z-index: 2;
 }
 
 /* Animações */
