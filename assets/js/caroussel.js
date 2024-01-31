@@ -11,7 +11,6 @@ const changeText = () => {
         if (slide.classList.contains('active')) {
             $infoText[index].classList.remove('disable');
         }
-        console.log(slide + $infoText[index])
     });
 }
 
