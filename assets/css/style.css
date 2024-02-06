@@ -230,6 +230,8 @@ h3 {
     display: flex;
     justify-content: center;
 }
+
+
 @media (max-width:767px) {
     #inicio {
         display: flex;

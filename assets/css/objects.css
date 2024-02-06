@@ -167,10 +167,11 @@ label span:nth-child(3) {
 }
 
 /* PupUp */
-body{
+body {
   display: flex;
   flex-direction: column;
 }
+
 .popup-area {
   position: fixed;
   top: 0;
@@ -187,12 +188,12 @@ body{
   width: 75vw;
   margin: auto;
   border: 4px solid var(--text);
- border-radius: 20px;
+  border-radius: 20px;
   background-color: var(--bgColor1);
   z-index: 2;
 }
 
-.popup-header{
+.popup-header {
   padding: 10px 30px;
   color: var(--text2);
   display: flex;
@@ -201,16 +202,64 @@ body{
   border-bottom: 3px solid var(--text);
 }
 
-.popup-header i{
-  font-size: 2vw;
-}
-.popup-header h2{
+.popup-header i {
   font-size: 2vw;
 }
 
-.popup-images{
+.popup-body {
+  padding-top: 13px;
+  height: 65vh;
+}
+
+.popup-images {
+  position: relative;
+  width: 100%;
+  top: 0;
+  margin: 0 !important;
+}
+
+.popup-images>div {
+  margin-bottom: 13px;
+}
+
+.pop-img {
+  display: block;
+  margin: auto;
+  width: 75%;
+  border-radius: 20px;
+}
+
+.popup-link {
+  position: relative;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  bottom: -28vh;
+}
+
+.popup-btn {
+  margin: auto;
+  background-color: var(--white);
+  border: 3px solid var(--text);
+  border-radius: 20px;
+  transition: .3s;
+}
+
+.popup-btn a {
+  padding: 10px;
+  color: var(--black);
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.popup-btn:hover {
+  background-color: var(--text);
+}
+
+.popup-btn a:hover {
+  color: var(--white);
 }
 
 /* Animações */

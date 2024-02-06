@@ -1,7 +1,7 @@
 const projetoInfo = {
     nome: document.querySelector('.popup-header h2'),
     texto: document.querySelector('.popup-text'),
-    img: document.querySelectorAll('.popup-images img'),
+    img: document.querySelectorAll('.pop-img'),
 };
 
 const recebeProjeto = (projeto) => {
