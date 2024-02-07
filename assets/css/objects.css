@@ -229,13 +229,37 @@ body {
   border-radius: 20px;
 }
 
+.popup-text{
+  height: 32vh;
+  width: 95%;
+  margin: auto;
+  overflow: auto;
+}
+
+.popup-text h4{
+  color: var(--text);
+}
+
+.popup-text p{
+  text-align: justify;
+}
+
+.popup-text p, .popup-text li{
+color: var(--text2);
+
+}
+.popup-text p::first-letter{
+  margin-left: 1em;
+}
+
 .popup-link {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  bottom: -28vh;
+  margin: 9px;
+  
 }
 
 .popup-btn {
@@ -261,6 +285,28 @@ body {
 .popup-btn a:hover {
   color: var(--white);
 }
+
+/* Barra de rolagem */
+
+.barra::-webkit-scrollbar {
+  width: 10px;
+}
+
+.barra::-webkit-scrollbar-track {
+  background-color: #d1d1d1;
+  border-radius: 20px;
+}
+
+.barra::-webkit-scrollbar-thumb {
+  background-color: #999999;
+  border-radius: 20px;
+  width: 6px;
+}
+
+.barra::-webkit-scrollbar-thumb:hover {
+  background-color: #808080;  /* Cor do polegar da barra de rolagem ao passar o mouse */
+}
+
 
 /* Animações */
 /* ----------------------------------------------

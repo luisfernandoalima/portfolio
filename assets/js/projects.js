@@ -6,7 +6,8 @@ const projetoInfo = {
 
 const recebeProjeto = (projeto) => {
     projetoInfo.nome.innerHTML = projeto
-    projetoInfo.texto.innerHTML = 'oi!'
+    var text = document.querySelector('.CyberBurguer').innerHTML
+    projetoInfo.texto.innerHTML = text
     projetoInfo.img.forEach(img => {
         img.src = `assets/img/projects/${projeto}/1.png`
     });
