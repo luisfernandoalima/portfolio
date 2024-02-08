@@ -1,8 +1,12 @@
-import recebeProjeto from './projects.js';
+import { exibirPopUp, removerPopUp } from './projects.js';
 
-const x = document.querySelector('.fa-solid.fa-x');
+// Defina a função no escopo global
+window.btnProjeto = function(projeto) {
+    exibirPopUp(projeto);
+}
 
-x.addEventListener('click', function() {
-    recebeProjeto("CyberBurguer");
+const X = document.querySelector('.fa-solid.fa-x');
+
+X.addEventListener('click', function() {
+    removerPopUp();
 });
-
