@@ -259,7 +259,6 @@ footer a{
 
 .img-footer{
     width: 50%;
-    justify-self: end;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -361,5 +360,19 @@ footer a{
     #projetos h2 {
         font-size: 2em;
         padding-bottom: 5vh;
+    }
+
+    /* footer */
+    .footer-img-area{
+        justify-content: start;
+    }
+
+    .img-footer{
+        justify-content:start;
+    }
+    
+    .img-footer i{
+        font-size: 60px;
+        padding-right: 10px;
     }
 }
