@@ -14,5 +14,4 @@ const changeText = () => {
     });
 }
 
-
-setInterval(changeText, 100)
+export {changeText}

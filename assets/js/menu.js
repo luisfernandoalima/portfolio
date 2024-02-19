@@ -48,5 +48,4 @@ const verificarLargura = () => {
     }
 }
 
-window.addEventListener('resize', verificarLargura)
-window.addEventListener('load', verificarLargura)
+export {verificarLargura}

@@ -30,4 +30,5 @@ const init = () => {
     window.addEventListener('resize', verificaCabeçalho)
     window.addEventListener('load', verificaCabeçalho)
 }
-window.addEventListener('load', init)
+
+export {init}

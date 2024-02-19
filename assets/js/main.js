@@ -1,35 +1,52 @@
-import { exibirPopUp, removerPopUp } from './projects.js';
+// Menu lateral
+import {
+    verificarLargura
+} from './menu.js';
+
+window.addEventListener('resize', verificarLargura)
+window.addEventListener('load', verificarLargura)
+
+// Cabeçalho fixo
+import {
+    init
+} from './header.js';
+
+window.addEventListener('load', init)
+
+// Modo escuro
+import {
+    darkMode
+} from './darkMode.js';
+
+darkMode()
+
+// Mudar texto sobre as tecnologias
+import {
+    changeText
+} from './caroussel.js';
+
+setInterval(changeText, 100)
+
+// Pop-Up
+import {
+    exibirPopUp,
+    removerPopUp
+} from './projects.js';
 
 // Defina a função no escopo global
-window.btnProjeto = function(projeto) {
+window.btnProjeto = function (projeto) {
     exibirPopUp(projeto);
 }
 
 const X = document.querySelector('.fa-solid.fa-x');
 
-X.addEventListener('click', function() {
+X.addEventListener('click', function () {
     removerPopUp();
 });
 
 // Footer
-document.querySelector('.meu-email').addEventListener('click', function() {
-    // Seleciona o elemento de texto
-    const texto = document.querySelector('.meu-email');
+import {
+    copiarEmail
+} from './footer.js';
 
-    // Cria uma seleção
-    const selecion = window.getSelection();
-    const intervalo = document.createRange();
-
-    // Seleciona o conteúdo do elemento de texto
-    intervalo.selectNodeContents(texto);
-    selecion.removeAllRanges();
-    selecion.addRange(intervalo);
-
-    // Executa o comando de cópia
-    document.execCommand('copy');
-
-    // Remove a seleção para evitar realces indesejados
-    selecion.removeAllRanges();
-
-    alert("Email copiado!")
-});
+copiarEmail()
