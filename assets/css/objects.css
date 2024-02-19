@@ -131,6 +131,7 @@ label span:nth-child(3) {
 .card {
   margin: auto;
   width: 100%;
+  margin-top: 0;
 }
 
 .card-img-top {
@@ -150,8 +151,12 @@ label span:nth-child(3) {
   /* Esconde o conteúdo que ultrapassa o contêiner */
   text-overflow: ellipsis;
   /* Substitui o texto que ultrapassa por reticências */
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   /* Número de linhas desejado */
+}
+
+.card-body p{
+  text-align: justify;
 }
 
 .card-body button {
@@ -164,6 +169,12 @@ label span:nth-child(3) {
   color: var(--white);
   background-color: var(--text);
 
+}
+
+button:disabled{
+  color: white;
+  background-color: #B1C9EF;
+  cursor: not-allowed;
 }
 
 /* PupUp */
@@ -299,6 +310,7 @@ color: var(--text2);
 
 .texts{
   position: absolute;
+  top: 0;
   left: -9999999px;
 }
 
