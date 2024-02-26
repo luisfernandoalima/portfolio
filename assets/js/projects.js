@@ -15,13 +15,14 @@ const recebeProjeto = (projeto) => {
     });
 };
 
+
+// Exibir pop-up
 const exibirPopUp = (projeto) => {
     popUp.classList.remove('disable')
     popUp.classList.remove('scale-out-center');
     popUp.classList.add('scale-in-center')
     recebeProjeto(projeto)
 }
-
 
 const removerPopUp = () => {
     popUp.classList.remove('scale-in-center')
@@ -35,7 +36,5 @@ const removerPopUp = () => {
 
     setTimeout(disable, 1000)
 }
-
-
 
 export  {exibirPopUp, removerPopUp};
