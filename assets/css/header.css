@@ -4,6 +4,7 @@
 }
 
 header {
+    position: relative;
     background-color: var(--bgHeader);
     height: 10vh;
     z-index: 1;
