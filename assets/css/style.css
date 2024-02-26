@@ -363,8 +363,13 @@ footer a{
     }
 
     /* footer */
+    .footer-text-area{
+        margin-top: 10px;
+    }
+
     .footer-img-area{
         justify-content: start;
+        margin-bottom: 10px;
     }
 
     .img-footer{
