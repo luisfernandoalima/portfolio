@@ -363,6 +363,10 @@ footer a{
     }
 
     /* footer */
+    footer{
+        z-index: 1;
+    }
+
     .footer-text-area{
         margin-top: 10px;
     }
