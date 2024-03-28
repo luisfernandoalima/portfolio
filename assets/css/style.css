@@ -242,6 +242,7 @@ h3 {
 footer{
     height: min-content;
     background-color: var(--bgColor3);
+    z-index: -1;
 }
 
 footer p{
@@ -361,11 +362,6 @@ footer a{
     #projetos h2 {
         font-size: 2em;
         padding-bottom: 5vh;
-    }
-
-    /* footer */
-    footer{
-        z-index: -1;
     }
 
     .footer-text-area{
