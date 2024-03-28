@@ -238,7 +238,7 @@ body {
 .pop-img {
   display: block;
   margin: auto;
-  width: 75%;
+  width:40%;
   border-radius: 20px;
 }
 
@@ -495,5 +495,11 @@ color: var(--text2);
     -webkit-transform: scale(0);
             transform: scale(0);
     opacity: 1;
+  }
+}
+
+@media (max-width:767px) {
+  .pop-img{
+width: 75%;
   }
 }
